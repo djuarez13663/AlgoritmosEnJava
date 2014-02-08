@@ -13,10 +13,15 @@ public class whileValue {
    public static void main(String[] args) {
    		int valorActual = 0;
    		System.out.println(args[0]);
+		int x=0;
+		
+		valorActual = Integer.parseInt(args[0].toString());
 
-   		//si valor actual < args[0]
-   			System.out.println("el valor actual es: "+valorActual);
-      
+		while(x<=valorActual)
+		{
+   			System.out.println("el valor actual es: "+x);
+			x++;
+      		}
    }
 
 }

@@ -15,12 +15,25 @@ mostrar
 public class productToNumber {   
 
    public static void main(String[] args) {
-   		int resultado = 0;
-   		System.out.println(args[0]);
+	
+	System.out.print("1");
+	
+	int resultado = 0;
+	int total = 1;
 
+	resultado = Integer.parseInt(args[0].toString());
 
-   		System.out.println("el producto es: "+resultado);
-      
+	for(int x=1; x<=resultado ; x++)
+	{						
+		
+		total = total * x;
+		if(x>1){
+
+		System.out.print("x"+x);		
+		}
+		
+	}
+		System.out.print("="+total);
    }
 
 }
